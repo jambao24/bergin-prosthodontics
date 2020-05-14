@@ -1,1 +1,1 @@
-# bergin-prosthodontics
+# Bergin Prosthodontics
