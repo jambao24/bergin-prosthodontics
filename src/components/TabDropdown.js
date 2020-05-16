@@ -7,12 +7,8 @@ import {
   Popper,
   MenuList,
   MenuItem,
-  withStyles
 } from "@material-ui/core";
-
 import "./TabDropdown.css";
-
-const styles = theme => {};
 
 const items = [
   { pathName: "/test", label: "Test 1" },
@@ -29,10 +25,9 @@ class TabDropdown extends React.Component {
     anchorEl: null
   };
 
-  handleMenuClick = index => {};
-
   handleMenuOpen = (index, event) => {
     const { currentTarget } = event;
+    console.log(currentTarget);
     this.setState({
       open: true,
       anchorEl: currentTarget,
@@ -47,16 +42,11 @@ class TabDropdown extends React.Component {
     });
   };
 
-  handleInputSearch = () => {};
-
   render() {
-    const { classes } = this.props;
     const { anchorEl, open } = this.state;
 
     return (
-      <div 
-        onMouseLeave={this.handleMenuClose.bind(this)}
-      >
+      <div onMouseLeave={this.handleMenuClose}>
         <AppBar position="static">
             <Tabs
               value={this.state.value}
@@ -93,4 +83,4 @@ class TabDropdown extends React.Component {
   }
 }
 
-export default withStyles(styles)(TabDropdown);
+export default TabDropdown;
