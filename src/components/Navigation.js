@@ -7,9 +7,8 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import { ThemeProvider } from '@material-ui/styles';
 
 const Navigation = () => {
-  // Include the theme in ThemeProvider for theme
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={Theme}>
       <div className="Navigation_Root">
         <AppBar position="static">
           <Toolbar className="Navigation_Toolbar">

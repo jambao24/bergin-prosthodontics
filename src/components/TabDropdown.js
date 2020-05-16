@@ -1,20 +1,16 @@
 import * as React from "react";
 import {
-  List,
   AppBar,
-  Toolbar,
   Paper,
   Tabs,
   Tab,
-  Link,
   Popper,
   MenuList,
   MenuItem,
-  InputBase,
   withStyles
 } from "@material-ui/core";
 
-import SearchIcon from "@material-ui/icons/Search";
+import "./TabDropdown.css";
 
 const styles = theme => {};
 
@@ -58,12 +54,10 @@ class TabDropdown extends React.Component {
     const { anchorEl, open } = this.state;
 
     return (
-      <div
-        className={classes.root}
+      <div 
         onMouseLeave={this.handleMenuClose.bind(this)}
       >
         <AppBar position="static">
-          <Paper className={classes.grow}>
             <Tabs
               value={this.state.value}
               indicatorColor="primary"
@@ -75,7 +69,7 @@ class TabDropdown extends React.Component {
                   key={index}
                   onMouseEnter={this.handleMenuOpen.bind(this, index)}
                   data-key={index}
-                  classes={{ root: classes.tabItem }}
+                  className="TabDropdown_Tab"
                   label={item.label}
                   aria-owns={open ? "menu-list-grow" : undefined}
                   aria-haspopup={"true"}
@@ -93,7 +87,6 @@ class TabDropdown extends React.Component {
                 </MenuList>
               </Paper>
             </Popper>
-          </Paper>
         </AppBar>
       </div>
     );
