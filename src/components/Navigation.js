@@ -1,38 +1,26 @@
 import React from 'react';
 import './Navigation.css';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, IconButton, Typography, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import MoreIcon from '@material-ui/icons/MoreVert';
 
 const Navigation = () => {
-
   return (
-    <div className="NavigationRoot">
-
+    <div className="Navigation_Root">
       <AppBar position="static">
-        <Toolbar className="NavigationToolbar">
+        <Toolbar className="Navigation_Toolbar">
           <IconButton
             edge="start"
-            className="NavigationMenuButton"
+            className="Navigation_Menu_Button"
             color="inherit"
-            aria-label="open drawer"
-          >
+            aria-label="open drawer">
             <MenuIcon />
           </IconButton>
-          <Typography className="NavigationTitle" variant="h5" noWrap>
+          <Typography className="Navigation_Title" variant="h5" noWrap>
             iloveyoubitch
-                </Typography>
-          <IconButton aria-label="search" color="inherit">
-            <SearchIcon />
-          </IconButton>
-          <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <MoreIcon />
-          </IconButton>
+          </Typography>
+          <Button variant="contained">
+            Contact Us
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -1,40 +1,20 @@
-.NavigationRoot {
+.Navigation_Root {
     flex-grow: 1;
 }
 
-.NavigationMenuButton {
+.Navigation_Menu_Button {
     margin-right: 16px;
 }
 
-.NavigationToolbar {
+.Navigation_Toolbar {
     min-height: 124px !important;
     align-items: flex-start !important;
     padding-top: 8px;
     padding-bottom: 16px;
 }
 
-.NavigationTitle {
+.Navigation_Title {
     flex-grow: 1;
     align-self: flex-end;
     text-align: center;
-}
-/* const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    toolbar: {
-      minHeight: 128,
-      alignItems: 'flex-start',
-      paddingTop: theme.spacing(1),
-      paddingBottom: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-      alignSelf: 'flex-end',
-      textAlign: 'center'
-    },
-  })); */
-  
+} 
