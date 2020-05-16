@@ -10,11 +10,8 @@ const Navigation = () => {
   return (
     <ThemeProvider theme={Theme}>
       <div className="Navigation_Root">
-        <AppBar position="static">
+        <AppBar position="static" className="Navigation_Appbar">
           <Toolbar className="Navigation_Toolbar">
-            <Typography className="Navigation_Title" variant="h5" noWrap>
-              <TabDropdown></TabDropdown>
-            </Typography>
             <PhoneIcon className = "Navigation_Phone_Icon" fontSize="small"/>
             <div className="Navigation_Phone_Number">
               <Typography variant="h7" noWrap>
@@ -25,6 +22,9 @@ const Navigation = () => {
               Contact Us
             </Button>
           </Toolbar>
+          <Typography className="Navigation_Title" variant="h5" noWrap>
+            <TabDropdown></TabDropdown>
+          </Typography>
         </AppBar>
       </div>
     </ThemeProvider>
