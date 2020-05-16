@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navigation.css';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -8,42 +9,22 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  toolbar: {
-    minHeight: 128,
-    alignItems: 'flex-start',
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-    alignSelf: 'flex-end',
-    textAlign: 'center'
-  },
-}));
-
 const Navigation = () => {
-  const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className="NavigationRoot">
+
       <AppBar position="static">
-        <Toolbar className={classes.toolbar}>
+        <Toolbar className="NavigationToolbar">
           <IconButton
             edge="start"
-            className={classes.menuButton}
+            className="NavigationMenuButton"
             color="inherit"
             aria-label="open drawer"
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h5" noWrap>
+          <Typography className="NavigationTitle" variant="h5" noWrap>
             iloveyoubitch
                 </Typography>
           <IconButton aria-label="search" color="inherit">
