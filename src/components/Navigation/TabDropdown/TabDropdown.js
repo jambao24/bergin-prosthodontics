@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 import "./TabDropdown.css";
-import {
-  AppBar,
-  Paper,
-  Tabs,
-  Tab,
-  Popper,
-  MenuList,
-  MenuItem,
-} from "@material-ui/core";
+import { AppBar, Paper, Tabs, Tab, Popper, MenuList, MenuItem} from "@material-ui/core";
+
+const HomeItems = ["Home 1", "Home 2", "Home 3"];
+const AboutUsItems = ["AboutUs 1", "AboutUs 2", "AboutUs 3"];
+const ForPatientsItems = ["ForPatients 1", "ForPatients 2", "ForPatients 3"];
+const ServicesItems = ["Services 1", "Services 2", "Services 3"];
+const ForDoctorsItems = ["ForDoctors 1", "ForDoctors 2", "ForDoctors 3"];
 
 const tabs = [
-  { key: 0, pathName: "/test", label: "Home" },
-  { key: 1, pathName: "/test", label: "About Us" },
-  { key: 2, pathName: "/test", label: "For Patients" }
+  { key: 0, pathName: "/test", label: "Home", items: HomeItems },
+  { key: 1, pathName: "/test", label: "About Us", items: AboutUsItems },
+  { key: 2, pathName: "/test", label: "For Patients", items: ForPatientsItems },
+  { key: 3, pathName: "/test", label: "Services", items: ServicesItems },
+  { key: 4, pathName: "/test", label: "Gallery", items: [] },
+  { key: 5, pathName: "/test", label: "For Doctors", items: ForDoctorsItems }
 ];
-
-const subItems = ["Item 1", "Item 2", "Item 3"];
 
 class TabDropdown extends Component {
   state = {
     tabIndex: 0,
     showDropdown: false,
-    anchorEl: null
+    targetTabElement: null
   };
 
   showDropdown = (index, event) => {
@@ -30,7 +29,7 @@ class TabDropdown extends Component {
     
     this.setState({
       showDropdown: true,
-      anchorEl: currentTarget,
+      targetTabElement: currentTarget,
       tabIndex: index
     });
   };
@@ -38,12 +37,12 @@ class TabDropdown extends Component {
   hideDropdown = () => {
     this.setState({ 
       showDropdown: false,
-      anchorEl: null
+      targetTabElement: null
     });
   };
 
   render() {
-    const { anchorEl, showDropdown, tabIndex } = this.state;
+    const { targetTabElement, showDropdown, tabIndex } = this.state;
 
     return (
       <div onMouseLeave={this.hideDropdown}>
@@ -66,10 +65,10 @@ class TabDropdown extends Component {
               ))}
             </Tabs>
 
-            <Popper open={showDropdown} anchorEl={anchorEl} id="menu-list-grow">
+            <Popper open={showDropdown} anchorEl={targetTabElement} id="menu-list-grow">
               <Paper>
                 <MenuList>
-                  {subItems.map((item, index) => (
+                  {tabs[tabIndex].items.map((item, index) => (
                     <MenuItem key={index} onClick={this.handleMenuClose}>
                       {item}
                     </MenuItem>
