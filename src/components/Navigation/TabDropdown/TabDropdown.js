@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component } from "react";
 import "./TabDropdown.css";
 import {
   AppBar,
@@ -18,7 +18,7 @@ const tabs = [
 
 const subItems = ["Item 1", "Item 2", "Item 3"];
 
-class TabDropdown extends React.Component {
+class TabDropdown extends Component {
   state = {
     tabIndex: 0,
     showDropdown: false,
