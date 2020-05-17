@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./TabDropdown.css";
 import {
   AppBar,
   Paper,
@@ -8,65 +9,64 @@ import {
   MenuList,
   MenuItem,
 } from "@material-ui/core";
-import "./TabDropdown.css";
 
-const items = [
-  { pathName: "/test", label: "Test 1" },
-  { pathName: "/test", label: "Test 2" },
-  { pathName: "/test", label: "Test 3" }
+const tabs = [
+  { pathName: "/test", label: "Home" },
+  { pathName: "/test", label: "About Us" },
+  { pathName: "/test", label: "For Patients" }
 ];
 
 const subItems = ["Item 1", "Item 2", "Item 3"];
 
 class TabDropdown extends React.Component {
   state = {
-    value: 0,
-    open: false,
+    tabIndex: 0,
+    showDropdown: false,
     anchorEl: null
   };
 
-  handleMenuOpen = (index, event) => {
+  showDropdown = (index, event) => {
     const { currentTarget } = event;
-    console.log(currentTarget);
+    
     this.setState({
-      open: true,
+      showDropdown: true,
       anchorEl: currentTarget,
-      value: index
+      tabIndex: index
     });
   };
 
-  handleMenuClose = () => {
-    this.setState({
-      open: false,
+  hideDropdown = () => {
+    this.setState({ 
+      showDropdown: false,
       anchorEl: null
     });
   };
 
   render() {
-    const { anchorEl, open } = this.state;
+    const { anchorEl, showDropdown, tabIndex } = this.state;
 
     return (
-      <div onMouseLeave={this.handleMenuClose}>
+      <div onMouseLeave={this.hideDropdown}>
         <AppBar position="static">
             <Tabs
-              value={this.state.value}
+              value={tabIndex}
               indicatorColor="primary"
               textColor="primary"
-              centered
-            >
-              {items.map((item, index) => (
+              centered>
+              {tabs.map((tab, index) => (
                 <Tab
                   key={index}
-                  onMouseEnter={this.handleMenuOpen.bind(this, index)}
+                  onMouseEnter={this.showDropdown.bind(this, index)}
                   data-key={index}
                   className="TabDropdown_Tab"
-                  label={item.label}
-                  aria-owns={open ? "menu-list-grow" : undefined}
+                  label={tab.label}
+                  aria-owns={showDropdown ? "menu-list-grow" : undefined}
                   aria-haspopup={"true"}
                 />
               ))}
             </Tabs>
-            <Popper open={open} anchorEl={anchorEl} id="menu-list-grow">
+
+            <Popper open={showDropdown} anchorEl={anchorEl} id="menu-list-grow">
               <Paper>
                 <MenuList>
                   {subItems.map((item, index) => (
