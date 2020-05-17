@@ -2,19 +2,19 @@ import React, { Component } from "react";
 import "./TabDropdown.css";
 import { AppBar, Paper, Tabs, Tab, Popper, MenuList, MenuItem} from "@material-ui/core";
 
-const HomeItems = ["Home 1", "Home 2", "Home 3"];
-const AboutUsItems = ["AboutUs 1", "AboutUs 2", "AboutUs 3"];
-const ForPatientsItems = ["ForPatients 1", "ForPatients 2", "ForPatients 3"];
-const ServicesItems = ["Services 1", "Services 2", "Services 3"];
-const ForDoctorsItems = ["ForDoctors 1", "ForDoctors 2", "ForDoctors 3"];
+const homeItems = ["Home 1", "Home 2", "Home 3"];
+const aboutUsItems = ["AboutUs 1", "AboutUs 2", "AboutUs 3"];
+const forPatientsItems = ["ForPatients 1", "ForPatients 2", "ForPatients 3"];
+const servicesItems = ["Services 1", "Services 2", "Services 3"];
+const forDoctorsItems = ["ForDoctors 1", "ForDoctors 2", "ForDoctors 3"];
 
 const tabs = [
-  { key: 0, pathName: "/test", label: "Home", items: HomeItems },
-  { key: 1, pathName: "/test", label: "About Us", items: AboutUsItems },
-  { key: 2, pathName: "/test", label: "For Patients", items: ForPatientsItems },
-  { key: 3, pathName: "/test", label: "Services", items: ServicesItems },
+  { key: 0, pathName: "/test", label: "Home", items: homeItems },
+  { key: 1, pathName: "/test", label: "About Us", items: aboutUsItems },
+  { key: 2, pathName: "/test", label: "For Patients", items: forPatientsItems },
+  { key: 3, pathName: "/test", label: "Services", items: servicesItems },
   { key: 4, pathName: "/test", label: "Gallery", items: [] },
-  { key: 5, pathName: "/test", label: "For Doctors", items: ForDoctorsItems }
+  { key: 5, pathName: "/test", label: "For Doctors", items: forDoctorsItems }
 ];
 
 class TabDropdown extends Component {
