@@ -2,10 +2,6 @@
     flex-grow: 1;
 }
 
-.Navigation_Appbar {
-    display: none;
-}
-
 .Navigation_Toolbar {
     min-height: 124px !important;
     align-items: flex-start !important;

@@ -68,7 +68,7 @@ class TabDropdown extends Component {
               <Paper>
                 <MenuList>
                   {tabs[tabIndex].items.map((item, index) => (
-                    <MenuItem key={index} onClick={this.handleMenuClose}>
+                    <MenuItem key={index} onClick={this.hideDropdown}>
                       {item}
                     </MenuItem>
                   ))}
