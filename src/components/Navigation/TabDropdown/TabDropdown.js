@@ -56,7 +56,6 @@ class TabDropdown extends Component {
                 <Tab
                   key={tab.key}
                   onMouseEnter={this.showDropdown.bind(this, tab.key)}
-                  data-key={tab.key}
                   className="TabDropdown_Tab"
                   label={tab.label}
                   aria-owns={showDropdown ? "menu-list-grow" : undefined}
