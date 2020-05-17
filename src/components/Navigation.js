@@ -9,18 +9,24 @@ import { ThemeProvider } from '@material-ui/styles';
 const Navigation = () => {
   return (
     <ThemeProvider theme={Theme}>
-      <AppBar position="static">
-        <Toolbar className="Navigation_Toolbar">
-          <PhoneIcon className="Navigation_Phone_Icon" fontSize="small"/>
-          <p className="Navigation_Phone_Number">206-866-6466</p>
-          <Button variant="contained" color="secondary">
-            Contact Us
-          </Button>
-        </Toolbar>
-        <Typography className="Navigation_Title" variant="h5" noWrap>
-          <TabDropdown></TabDropdown>
-        </Typography>
-      </AppBar>
+      <div className="Navigation_Root">
+        <AppBar position="static" className="Navigation_Appbar">
+          <Toolbar className="Navigation_Toolbar">
+            <PhoneIcon className = "Navigation_Phone_Icon" fontSize="small"/>
+            <div className="Navigation_Phone_Number">
+              <Typography variant="h7" noWrap>
+                206-866-6466
+              </Typography>
+            </div>
+            <Button variant="contained" color="secondary">
+              Contact Us
+            </Button>
+          </Toolbar>
+          <Typography className="Navigation_Title" variant="h5" noWrap>
+            <TabDropdown></TabDropdown>
+          </Typography>
+        </AppBar>
+      </div>
     </ThemeProvider>
   )
 }
