@@ -29,3 +29,8 @@
     margin-right: 10px;
     margin-top: 6px;
 }
+
+.Navigation_Tab_Dropdown {
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}

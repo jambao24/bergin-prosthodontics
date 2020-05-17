@@ -1,10 +1,10 @@
 import React from "react";
 import TabDropdown from "./TabDropdown/TabDropdown";
 import "./Navigation.css";
-import Theme from "../../Theme";
-import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
-import PhoneIcon from "@material-ui/icons/Phone";
 import { ThemeProvider } from '@material-ui/styles';
+import Theme from "../../Theme";
+import { AppBar, Toolbar, Button } from "@material-ui/core";
+import PhoneIcon from "@material-ui/icons/Phone";
 
 const Navigation = () => {
   return (
@@ -15,9 +15,9 @@ const Navigation = () => {
           <p className="Navigation_Phone_Number">206-866-6466</p>
           <Button variant="contained" color="secondary">Contact Us</Button>
         </Toolbar>
-        <Typography className="Navigation_Title" variant="h5" noWrap>
-          <TabDropdown></TabDropdown>
-        </Typography>
+        <div className="Navigation_Tab_Dropdown">
+          <TabDropdown></TabDropdown>  
+        </div>
       </AppBar>
     </ThemeProvider>
   )
