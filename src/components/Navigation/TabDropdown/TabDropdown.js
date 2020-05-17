@@ -11,9 +11,9 @@ import {
 } from "@material-ui/core";
 
 const tabs = [
-  { pathName: "/test", label: "Home" },
-  { pathName: "/test", label: "About Us" },
-  { pathName: "/test", label: "For Patients" }
+  { key: 0, pathName: "/test", label: "Home" },
+  { key: 1, pathName: "/test", label: "About Us" },
+  { key: 2, pathName: "/test", label: "For Patients" }
 ];
 
 const subItems = ["Item 1", "Item 2", "Item 3"];
@@ -53,11 +53,11 @@ class TabDropdown extends Component {
               indicatorColor="primary"
               textColor="primary"
               centered>
-              {tabs.map((tab, index) => (
+              {tabs.map((tab) => (
                 <Tab
-                  key={index}
-                  onMouseEnter={this.showDropdown.bind(this, index)}
-                  data-key={index}
+                  key={tab.key}
+                  onMouseEnter={this.showDropdown.bind(this, tab.key)}
+                  data-key={tab.key}
                   className="TabDropdown_Tab"
                   label={tab.label}
                   aria-owns={showDropdown ? "menu-list-grow" : undefined}
