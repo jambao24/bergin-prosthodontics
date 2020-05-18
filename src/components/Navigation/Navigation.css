@@ -1,0 +1,21 @@
+.Navigation_Toolbar {
+    min-height: 50px !important;
+    align-items: flex-start !important; 
+    padding-top: 8px;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.Navigation_Phone_Icon {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.Navigation_Phone_Number {
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.Navigation_Tab_Dropdown {
+    overflow: hidden !important;
+}
