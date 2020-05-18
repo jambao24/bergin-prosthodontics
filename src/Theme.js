@@ -4,14 +4,15 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: '#ec8bec',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+      main: '#846B8A',
+      // main: '#F08080',
+      // dark: will be calculated from palette.primary.main , 
+      contrastText: 'white'
     },
     secondary: {
-      main: '#fc37ba',
-      // dark: will be calculated from palette.secondary.main,
-      //contrastText: '#ffcc00',
+      main: '#A8C7BB',
+      // dark: will be calculated from palette.secondary.main, main: '#F8AD9D',
+      contrastText: 'white'
     }
   },
 });

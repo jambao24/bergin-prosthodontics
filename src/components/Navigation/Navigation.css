@@ -1,26 +1,16 @@
-.Navigation_Root {
-    flex-grow: 1;
-}
-
 .Navigation_Toolbar {
-    min-height: 124px !important;
+    min-height: 50px !important;
     align-items: flex-start !important; /* Need to align vertically at the top */
     padding-top: 8px;
     display: flex; /* Might need for phone icon etc? */
     justify-content: flex-end; /* Need because Appbar parent has display: flex */
 }
 
-.Navigation_Title {
-    flex-grow: 1;
-    align-self: flex-end;
-    text-align: center;
-    width: 100%;
-} 
-
 .Navigation_Phone_Icon {
     margin-right: 5px;
     margin-top: 8px;
 }
+
 .Navigation_Phone_Number {
     margin-right: 10px;
     margin-top: 7px;
