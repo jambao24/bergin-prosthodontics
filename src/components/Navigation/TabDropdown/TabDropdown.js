@@ -47,6 +47,7 @@ class TabDropdown extends Component {
     return (
       <div onMouseLeave={this.hideDropdown}>
         <AppBar position="static">
+          
             <Tabs
               value={tabIndex}
               indicatorColor="primary"
@@ -75,6 +76,7 @@ class TabDropdown extends Component {
                 </MenuList>
               </Paper>
             </Popper>
+
         </AppBar>
       </div>
     );
