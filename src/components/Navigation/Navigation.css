@@ -1,9 +1,9 @@
 .Navigation_Toolbar {
     min-height: 50px !important;
-    align-items: flex-start !important; /* Need to align vertically at the top */
+    align-items: flex-start !important; 
     padding-top: 8px;
-    display: flex; /* Might need for phone icon etc? */
-    justify-content: flex-end; /* Need because Appbar parent has display: flex */
+    display: flex; 
+    justify-content: flex-end; 
 }
 
 .Navigation_Phone_Icon {
