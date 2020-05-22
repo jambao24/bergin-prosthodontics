@@ -1,28 +1,9 @@
-.ContactInfo {
-    min-height: 150px;
+.ContactInformation_Grid_Left {
     display: flex;
-    justify-content: center;
-    background-color: #F0F0F0;
-    padding: 10px;
+    justify-content: flex-end;
 }
 
-    .ContactInfo p {
-        font-family: "Arial";
-    }
-
-.ContactInfo_Title {
-    font-weight: bold;
-    margin-bottom: 5px !important;
-}
-
-.ContactInfo_Column {
-    text-align: center;
-    flex-grow: 1;
+.ContactInformation_Grid_Right {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
 }
-
-    .ContactInfo_Column p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
