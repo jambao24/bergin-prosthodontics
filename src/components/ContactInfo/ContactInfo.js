@@ -1,31 +1,58 @@
 import React from 'react';
-import "./ContactInfo.css"
-import Divider from '@material-ui/core/Divider';
+import { makeStyles } from '@material-ui/core/styles';
+import {Grid, Box} from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+import Theme from "../../Theme";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
 const ContactInfo = () => {
+  const classes = useStyles();
+
   return (
-    <div className="ContactInfo">
-      <div className="ContactInfo_Column">
-        <p className="ContactInfo_Title">Office Hours Bitches</p>
-        <p>Monday</p>
-        <p>Monday</p>
-        <p>Monday</p>
-        <p>Monday</p>
+    <ThemeProvider theme={Theme}>
+      <div className={classes.root}>
+        <Grid container spacing={3}>
+          <Grid item xs={4}>
+            <Box flexDirection="column" className={classes.paper}>
+              <p>Office hours</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+            </Box>
+          </Grid>
+          <Grid item xs={4}>
+            <Box className={classes.paper}>
+              <p>Office hours</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+            </Box>
+          </Grid>
+          <Grid item xs={4}>
+            <Box className={classes.paper}>
+              <p>Office hours</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+              <p>Monday 8:30 AM - 5 PM</p>
+            </Box>
+          </Grid>
+        </Grid>
       </div>
-      <Divider orientation="vertical" flexItem />
-      <div className="ContactInfo_Column">
-        <p className="ContactInfo_Title">Location</p>
-        <p>Seattle</p>
-        <p>Seattle</p>
-        <p>Seattle</p>
-        <p>Seattle</p>
-      </div>
-      <Divider orientation="vertical" flexItem />
-      <div className="ContactInfo_Column">
-        <p className="ContactInfo_Title">Map</p>
-      </div>
-    </div>
-  )
+    </ThemeProvider>
+  );
 }
 
 export default ContactInfo;
