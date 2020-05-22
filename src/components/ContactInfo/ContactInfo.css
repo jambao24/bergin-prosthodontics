@@ -2,6 +2,17 @@
     min-height: 150px;
     display: flex;
     justify-content: center;
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+    .ContactInfo p {
+        font-family: "Arial";
+    }
+
+.ContactInfo_Title {
+    font-weight: bold;
+    margin-bottom: 5px !important;
 }
 
 .ContactInfo_Column {
