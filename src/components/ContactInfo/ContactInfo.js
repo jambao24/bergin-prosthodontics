@@ -4,7 +4,7 @@ import './ContactInfo.css';
 
 const ContactInfo = () => {
   return (
-    <Grid container className="ContactInformation">
+    <div className="ContactInformation">
       <Grid xs={4} className="ContactInformation_Grid_Left">
         <div className="ContactInformation_Column">
           <p>OFFICE HOURS</p>
@@ -28,7 +28,7 @@ const ContactInfo = () => {
           <p>MAP</p>
         </div>
       </Grid>
-    </Grid>
+    </div>
   );
 }
 
