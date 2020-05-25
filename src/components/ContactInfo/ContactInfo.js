@@ -5,7 +5,8 @@ import './ContactInfo.css';
 const ContactInfo = () => {
   return (
     <div className="ContactInformation">
-      <Grid xs={4} className="ContactInformation_Grid_Left">
+
+      <div className="ContactInformation_Grid_Left">
         <div className="ContactInformation_Column">
           <p>OFFICE HOURS</p>
           <p>Monday 8 AM - 5 PM</p>
@@ -13,21 +14,22 @@ const ContactInfo = () => {
           <p>Wednesday 8 AM - 5 PM</p>
           <p>Thursday 8 AM - 12 PM</p>
         </div>
-      </Grid>
+      </div>
 
-      <Grid xs={3}>
+      <div className="ContactInformation_Grid_Middle">
         <div className="ContactInformation_Column">
           <p>LOCATION</p>
           <p>3819 NE 45th St Suite C</p>
           <p>Seattle, WA 98105</p>
         </div>
-      </Grid>
+      </div>
 
-      <Grid xs={4} className="ContactInformation_Grid_Right">
+      <div className="ContactInformation_Grid_Right">
         <div className="ContactInformation_Column">
           <p>MAP</p>
         </div>
-      </Grid>
+      </div>
+
     </div>
   );
 }

@@ -19,9 +19,23 @@
 .ContactInformation_Grid_Left {
     display: flex;
     justify-content: flex-end;
+
+    flex-grow: 0;
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+}
+
+.ContactInformation_Grid_Middle {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
 }
 
 .ContactInformation_Grid_Right {
     display: flex;
     justify-content: flex-start;
+
+    flex-grow: 0;
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
 }
