@@ -1,3 +1,21 @@
+.ContactInformation {
+    display: "flex";
+    background-color: #67697C;
+    justify-content: center;
+}
+
+    .ContactInformation p {
+        font-size: 14px;
+        letter-spacing: 0.02857em;
+        color: white;
+    }
+
+.ContactInformation_Column {
+    padding: 16px;
+    text-align: center;
+    color: #C6878F;
+}
+
 .ContactInformation_Grid_Left {
     display: flex;
     justify-content: flex-end;

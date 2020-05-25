@@ -1,57 +1,32 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import {Grid, Box} from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import './ContactInfo.css';
-import { useTheme } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    backgroundColor: theme.palette.primary.main
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  customColor: {
-    color: theme.palette.secondary.contrastText,
-  }
-}));
 
 const ContactInfo = () => {
-  const classes = useStyles();
-
   return (
-    <Grid container className={classes.root}>
-      <Grid item xs={4} className="ContactInformation_Grid_Left">
-        <Box className={classes.paper}>
-          <p>Office hours</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-        </Box>
+    <Grid container className="ContactInformation">
+      <Grid xs={4} className="ContactInformation_Grid_Left">
+        <div className="ContactInformation_Column">
+          <p>OFFICE HOURS</p>
+          <p>Monday 8 AM - 5 PM</p>
+          <p>Tuesday 8 AM - 5 PM</p>
+          <p>Wednesday 8 AM - 5 PM</p>
+          <p>Thursday 8 AM - 12 PM</p>
+        </div>
       </Grid>
 
-      <Grid item xs={4}>
-        <Box className={classes.paper}>
-          <p className={classes.customColor}>Office hours</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-        </Box>
+      <Grid xs={3}>
+        <div className="ContactInformation_Column">
+          <p>LOCATION</p>
+          <p>3819 NE 45th St Suite C</p>
+          <p>Seattle, WA 98105</p>
+        </div>
       </Grid>
 
-      <Grid item xs={4} className="ContactInformation_Grid_Right">
-        <Box className={classes.paper}>
-          <p>Office hours</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-          <p>Monday 8:30 AM - 5 PM</p>
-        </Box>
+      <Grid xs={4} className="ContactInformation_Grid_Right">
+        <div className="ContactInformation_Column">
+          <p>MAP</p>
+        </div>
       </Grid>
     </Grid>
   );
