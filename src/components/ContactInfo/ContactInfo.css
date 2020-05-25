@@ -1,0 +1,51 @@
+.ContactInfo {
+    display: flex;
+    background-color: #67697C;
+    justify-content: center;
+}
+
+    .ContactInfo p {
+        line-height: 10px;
+        font-size: 14px;
+        letter-spacing: 0.02857em;
+        color: white;
+        text-transform: uppercase;
+    }
+
+.ContactInfo_Column {
+    padding: 16px;
+    text-align: center;
+}
+
+    .ContactInfo_Column.Left {
+        display: flex;
+        justify-content: flex-end;
+
+        flex-grow: 0;
+        max-width: 33.3333%;
+        flex-basis: 33.3333%;
+    }
+
+    .ContactInfo_Column.Middle {
+        flex-grow: 0;
+        max-width: 25%;
+        flex-basis: 25%;
+    }
+
+    .ContactInfo_Column.Right {
+        display: flex;
+        justify-content: flex-start;
+
+        flex-grow: 0;
+        max-width: 33.3333%;
+        flex-basis: 33.3333%;
+    }
+
+.ContactInfo_Copyright {
+    font-size: 14px;
+    letter-spacing: 0.02857em;
+    color: white;
+    text-transform: uppercase;
+    background-color: #67697C;
+    text-align: center;
+}
