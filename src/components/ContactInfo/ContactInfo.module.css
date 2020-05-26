@@ -12,12 +12,12 @@
         text-transform: uppercase;
     }
 
-.ContactInfo_Column {
+.Column {
     padding: 16px;
     text-align: center;
 }
 
-    .ContactInfo_Column.Left {
+    .Column_Left {
         display: flex;
         justify-content: flex-end;
 
@@ -26,13 +26,13 @@
         flex-basis: 33.3333%;
     }
 
-    .ContactInfo_Column.Middle {
+    .Column_Middle {
         flex-grow: 0;
         max-width: 25%;
         flex-basis: 25%;
     }
 
-    .ContactInfo_Column.Right {
+    .Column_Right {
         display: flex;
         justify-content: flex-start;
 
@@ -41,7 +41,7 @@
         flex-basis: 33.3333%;
     }
 
-.ContactInfo_Copyright {
+.Copyright {
     font-size: 14px;
     letter-spacing: 0.02857em;
     color: white;

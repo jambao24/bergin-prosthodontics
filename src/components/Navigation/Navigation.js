@@ -1,6 +1,6 @@
 import React from "react";
 import TabDropdown from "./TabDropdown/TabDropdown";
-import "./Navigation.css";
+import cn from  "./Navigation.module.css";
 import { AppBar, Toolbar, Button } from "@material-ui/core";
 import PhoneIcon from "@material-ui/icons/Phone";
 
@@ -8,13 +8,13 @@ const Navigation = () => {
   return (
     <AppBar position="static">
 
-      <Toolbar className="Navigation_Toolbar">
-        <PhoneIcon className = "Navigation_Phone_Icon" fontSize="small"/>
-        <p className="Navigation_Phone_Number">206-866-6466</p>
+      <Toolbar className={cn.Toolbar}>
+        <PhoneIcon className={cn.Phone_Icon} fontSize="small"/>
+        <p className={cn.Phone_Number}>206-866-6466</p>
         <Button variant="contained" color="secondary">Contact Us</Button>
       </Toolbar>
 
-      <div className="Navigation_Tab_Dropdown">
+      <div className={cn.Tab_Dropdown}>
         <TabDropdown></TabDropdown>  
       </div>
       

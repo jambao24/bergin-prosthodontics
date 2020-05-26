@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./TabDropdown.css";
+import cn from "./TabDropdown.module.css";
 import { AppBar, Paper, Tabs, Tab, Popper, MenuList, MenuItem} from "@material-ui/core";
 
 const aboutUsItems = ["Our Practice", "Meet Dr. Bergin", "Meet Our Team"];
@@ -56,7 +56,7 @@ class TabDropdown extends Component {
                 <Tab
                   key={tab.key}
                   onMouseEnter={this.showDropdown.bind(this, tab.key)}
-                  className="TabDropdown_Tab"
+                  className={cn.Tab}
                   label={tab.label}
                   aria-owns={showDropdown ? "menu-list-grow" : undefined}
                   aria-haspopup={"true"}
