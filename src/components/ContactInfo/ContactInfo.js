@@ -1,5 +1,5 @@
 import React from 'react';
-import cn from './ContactInfo.module.css';
+import cn from './ContactInfo.module.scss';
 import classNames from 'classnames/bind';
 
 const ContactInfo = () => {

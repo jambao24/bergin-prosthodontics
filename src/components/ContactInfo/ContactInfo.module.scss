@@ -1,6 +1,8 @@
+@import 'scss/global.scss';
+
 .ContactInfo {
     display: flex;
-    background-color: #67697C;
+    background-color: $primary-background-color;
     justify-content: center;
 }
 
@@ -8,7 +10,7 @@
         line-height: 10px;
         font-size: 14px;
         letter-spacing: 0.02857em;
-        color: white;
+        color: $primary-text;;
         text-transform: uppercase;
     }
 
@@ -44,8 +46,8 @@
 .Copyright {
     font-size: 14px;
     letter-spacing: 0.02857em;
-    color: white;
+    color: $primary-text;;
     text-transform: uppercase;
-    background-color: #67697C;
+    background-color: $primary-background-color;
     text-align: center;
 }

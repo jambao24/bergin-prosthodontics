@@ -1,3 +1,9 @@
+@import 'scss/global.scss';
+
+.AppBar {
+    background-color: $primary-background-color;
+}
+
 .Toolbar {
     min-height: 50px !important;
     align-items: flex-start !important; 
@@ -18,4 +24,9 @@
 
 .Tab_Dropdown {
     overflow: hidden !important;
+}
+
+.Button {
+    background-color: $secondary-background-color;
+    color: $primary-text;
 }
