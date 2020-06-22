@@ -1,4 +1,4 @@
-@import 'scss/global.scss';
+@import 'global.scss';
 
 .AppBar {
     background-color: $primary-background-color;
@@ -27,6 +27,6 @@
 }
 
 .Button {
-    background-color: $secondary-background-color;
+    background-color: $teriary-background-color;
     color: $primary-text;
 }

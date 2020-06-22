@@ -1,4 +1,4 @@
-@import 'scss/global.scss';
+@import 'global.scss';
 
 .ContactInfo {
     display: flex;
@@ -10,7 +10,7 @@
         line-height: 10px;
         font-size: 14px;
         letter-spacing: 0.02857em;
-        color: $primary-text;;
+        color: $primary-text;
         text-transform: uppercase;
     }
 
