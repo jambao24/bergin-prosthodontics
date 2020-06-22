@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import cn from "./TabDropdown.module.css";
+import cn from "./TabDropdown.module.scss";
 import { AppBar, Paper, Tabs, Tab, Popper, MenuList, MenuItem} from "@material-ui/core";
 
 const aboutUsItems = ["Our Practice", "Meet Dr. Bergin", "Meet Our Team"];
@@ -45,11 +45,11 @@ class TabDropdown extends Component {
 
     return (
       <div onMouseLeave={this.hideDropdown}>
-        <AppBar position="static">
+        <AppBar position="static" className={cn.AppBar}>
           
             <Tabs
               value={tabIndex}
-              indicatorColor="primary"
+              classes={{indicator: cn.TabUnderline}}
               textColor="primary"
               centered>
               {tabs.map((tab) => (
