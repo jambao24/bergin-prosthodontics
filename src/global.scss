@@ -1,10 +1,15 @@
 // Background colors
-$primary-background-color: #304774 !important;
+$primary-background-color: #1A2440 !important; // #304774
 $secondary-background-color: #E4EAF1 !important;
-$teriary-background-color: #73305B !important;
+$teriary-background-color:  #B4B8C5 !important; //#73305B 
 
 // Texts
 $primary-text: white !important;
+$secondary-text: #304774 !important;
+
+// Font size
+$primary-font-size: 23px !important;
+$secondary-font-size: 27px !important;
 
 body {
     margin: 0;

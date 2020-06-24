@@ -1,0 +1,35 @@
+@import 'global.scss';
+
+.FeaturedServices {
+    display: flex;
+    justify-content: center;
+    background-color: $secondary-background-color;
+    min-height: 360px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow : 2px 0px 5px rgba(35, 31, 32, 0.62);
+}
+
+.Text {
+    font-size: $primary-font-size;
+    color: $secondary-text;
+    text-align: center;
+}
+
+.Break{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: $secondary-text;
+}
+
+.Header {
+    font-family: PlayfairDisplay-Bold;
+}
+
+.Caption {
+    font-family: PlayfairDisplay-Regular;
+}
+
+.Images{
+    margin-top: 23px
+}
