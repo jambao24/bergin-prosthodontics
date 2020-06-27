@@ -28,13 +28,13 @@
 
 .Header {
     font-family: PlayfairDisplay-Bold;
-    font-size: 30px;
+    font-size: $primary-font-size;
     margin-bottom: 0px;
 }
 
 .Captions {
     font-family: PlayfairDisplay-Regular;
-    font-size: 27px;
+    font-size: $primary-font-size;
     color: $primary-text;
     margin-top: 0;
     display: inline-block;

@@ -19,7 +19,6 @@ const BeforeAndAfter = () => {
             <a href="#">Click here</a> to view our full smile gallery.
           </span>
         </div>
-        
       </div>
     </>
   )
