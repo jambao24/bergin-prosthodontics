@@ -1,0 +1,45 @@
+@import 'global.scss';
+
+.ContactInfo {
+    display: flex;
+    background-color: $primary-background-color;
+    justify-content: center;
+    min-height: 300px;
+}
+
+    .ContactInfo p {
+        line-height: 15px;
+        font-size: 14px;
+        letter-spacing: 0.02857em;
+        color: $primary-text;
+        text-transform: uppercase;
+    }
+
+.Column {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+}
+
+    .Column_Left {
+        justify-content: flex-end;
+    }
+
+    .Column_Middle {
+        justify-content: center;
+    }
+
+    .Column_Right {
+        justify-content: flex-start;
+    }
+
+.Copyright {
+    font-size: 14px;
+    letter-spacing: 0.02857em;
+    color: $primary-text;;
+    text-transform: uppercase;
+    background-color: $primary-background-color;
+    text-align: center;
+}

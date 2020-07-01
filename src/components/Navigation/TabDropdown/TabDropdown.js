@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import "./TabDropdown.css";
+import cn from "./TabDropdown.module.scss";
 import { AppBar, Paper, Tabs, Tab, Popper, MenuList, MenuItem} from "@material-ui/core";
 
-const homeItems = ["Home 1", "Home 2", "Home 3"];
-const aboutUsItems = ["AboutUs 1", "AboutUs 2", "AboutUs 3"];
-const forPatientsItems = ["ForPatients 1", "ForPatients 2", "ForPatients 3"];
-const servicesItems = ["Services 1", "Services 2", "Services 3"];
-const forDoctorsItems = ["ForDoctors 1", "ForDoctors 2", "ForDoctors 3"];
+const aboutUsItems = ["Our Practice", "Meet Dr. Bergin", "Meet Our Team"];
+const forPatientsItems = ["Patient Forms", "Financial Policy", "Insurance"];
+const servicesItems = ["Cosmetic Dentistry", "Restorative Denstistry", "Implant Prosthodontics", "Removable Prosthodontics"];
+const forDoctorsItems = ["Referring Dentists", "Publications"];
 
 const tabs = [
-  { key: 0, pathName: "/test", label: "Home", items: homeItems },
+  { key: 0, pathName: "/test", label: "Home", items: [] },
   { key: 1, pathName: "/test", label: "About Us", items: aboutUsItems },
-  { key: 2, pathName: "/test", label: "For Patients", items: forPatientsItems },
-  { key: 3, pathName: "/test", label: "Services", items: servicesItems },
+  { key: 2, pathName: "/test", label: "Services", items: servicesItems },
+  { key: 3, pathName: "/test", label: "For Patients", items: forPatientsItems },
   { key: 4, pathName: "/test", label: "Gallery", items: [] },
   { key: 5, pathName: "/test", label: "For Doctors", items: forDoctorsItems }
 ];
@@ -46,18 +45,18 @@ class TabDropdown extends Component {
 
     return (
       <div onMouseLeave={this.hideDropdown}>
-        <AppBar position="static">
+        <AppBar position="static" className={cn.AppBar}>
           
             <Tabs
               value={tabIndex}
-              indicatorColor="primary"
+              classes={{indicator: cn.TabUnderline}}
               textColor="primary"
               centered>
               {tabs.map((tab) => (
                 <Tab
                   key={tab.key}
                   onMouseEnter={this.showDropdown.bind(this, tab.key)}
-                  className="TabDropdown_Tab"
+                  className={cn.Tab}
                   label={tab.label}
                   aria-owns={showDropdown ? "menu-list-grow" : undefined}
                   aria-haspopup={"true"}

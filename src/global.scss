@@ -1,0 +1,52 @@
+// Background colors
+$primary-background-color: #1A2440 !important; // #304774
+$secondary-background-color: #E4EAF1 !important;
+$teriary-background-color:  #73305B !important; //#B4B8C5
+
+// Texts
+$primary-text: white !important;
+$secondary-text: #304774 !important;
+
+// Font size
+$primary-font-size: 23px !important;
+$secondary-font-size: 27px !important;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src: local('OpenSans-Regular'), url(./assets/fonts/OpenSans-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: local('PlayfairDisplay-Bold'), url(./assets/fonts/PlayfairDisplay-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: local('PlayfairDisplay-Regular'), url(./assets/fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway-Bold';
+    src: local('Raleway-Bold'), url(./assets/fonts/Raleway-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway-Regular';
+    src: local('Raleway-Regular'), url(./assets/fonts/Raleway-Regular.ttf) format('truetype');
+  }
+  
