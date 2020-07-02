@@ -1,0 +1,85 @@
+@import 'global.scss';
+
+.Summary {
+    display: flex;
+    justify-content: center;
+    min-height: 620px;
+    background-color: $quaternary-background-color;
+}
+
+.Welcome_Text {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.Left_Space {
+    flex-basis: 30%;
+}
+
+.Right_Box {
+    flex-basis: 70%;
+    margin-top: 40px;
+}
+
+.Title_Text {
+    font-size: $secondary-font-size;
+    color: $secondary-text;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .Title_Text span:nth-child(1) {
+        font-family: PlayfairDisplay-Regular; 
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .Title_Text span:nth-child(2) {
+        display: block;
+        font-family: PlayfairDisplay-Bold;
+    }
+
+.Break{
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: $secondary-text;
+}
+
+.Paragraph {
+    font-size: $primary-font-size;
+    font-family: OpenSans-Regular;
+    text-align: center;
+}
+
+.Bergin_Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+    // Tablets, phones
+    @media only screen and (min-width: 600px) {
+        .Bergin_Image img {
+            width: 300px;
+        }
+    }
+
+    // Monitors, laptops
+    @media only screen and (min-width: 1200px) {
+        .Bergin_Image img {
+            width: 379px;
+        }
+    }
+
+.Button {
+    margin-top: 16px !important;
+    background-color: $quaternary-background-color;
+    color: $secondary-text;
+    font-family: PlayfairDisplay-Bold4 !important; 
+    font-size: 20px !important;
+    border: 1px solid #304774 !important;
+    
+}
