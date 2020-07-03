@@ -1,7 +1,7 @@
 @import 'global.scss';
 
 .AppBar {
-    background-color: #483D8B;
+    background-color: $primary-background-color;
 }
 
 .Toolbar {
@@ -29,6 +29,4 @@
 .Button {
     background-color: $teriary-background-color;
     color: $primary-text;
-    margin-right: 100px;
-    margin-top: 10px;
 }
