@@ -1,10 +1,13 @@
 @import 'global.scss';
 
-.ContactInfo {
+.Contact_Info {
     display: flex;
     background-color: $primary-background-color;
     justify-content: center;
     min-height: 300px;
+    color: $primary-text;
+    font-family: Raleway-Regular;
+    
 }
 
     .ContactInfo p {
@@ -42,4 +45,10 @@
     text-transform: uppercase;
     background-color: $primary-background-color;
     text-align: center;
+    font-family: Raleway-Regular;
+}
+
+.Bold_Header {
+    font-family: Raleway-Bold;
+    font-size: $teriary-font-size;
 }

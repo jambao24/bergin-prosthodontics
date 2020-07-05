@@ -2,6 +2,7 @@
 $primary-background-color: #1A2440 !important; // #304774
 $secondary-background-color: #E4EAF1 !important;
 $teriary-background-color:  #73305B !important; //#B4B8C5
+$quaternary-background-color: #F1F2F2 !important;
 
 // Texts
 $primary-text: white !important;
@@ -9,7 +10,8 @@ $secondary-text: #304774 !important;
 
 // Font size
 $primary-font-size: 23px !important;
-$secondary-font-size: 27px !important;
+$secondary-font-size: 38px !important;
+$teriary-font-size: 18px !important;
 
 body {
     margin: 0;
@@ -49,4 +51,5 @@ body {
     font-family: 'Raleway-Regular';
     src: local('Raleway-Regular'), url(./assets/fonts/Raleway-Regular.ttf) format('truetype');
   }
+  
   
