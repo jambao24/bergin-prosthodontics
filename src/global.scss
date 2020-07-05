@@ -11,6 +11,7 @@ $secondary-text: #304774 !important;
 // Font size
 $primary-font-size: 23px !important;
 $secondary-font-size: 38px !important;
+$teriary-font-size: 18px !important;
 
 body {
     margin: 0;
@@ -50,4 +51,5 @@ body {
     font-family: 'Raleway-Regular';
     src: local('Raleway-Regular'), url(./assets/fonts/Raleway-Regular.ttf) format('truetype');
   }
+  
   

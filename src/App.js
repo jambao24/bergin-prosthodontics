@@ -4,12 +4,13 @@ import Summary from "./components/Summary/Summary";
 import ContactInfo from "./components/ContactInfo/ContactInfo";
 import BeforeAndAfter from "./components/BeforeAndAfter/BeforeAndAfter";
 import FeaturedServices from "./components/FeaturedServices/FeaturedServices"
+import Title from "./components/Title/Title";
 
 export default function App() {
   return (
     <>
       <Navigation></Navigation>
-      <div style={{minHeight: "500px"}}></div>
+      <Title></Title>
       <Summary></Summary>
       <BeforeAndAfter></BeforeAndAfter>
       <FeaturedServices></FeaturedServices>

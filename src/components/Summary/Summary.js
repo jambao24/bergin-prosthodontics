@@ -8,22 +8,24 @@ const Summary = () => {
 		<>
 			<div className={cn.Summary}>
 
-				<div className={cn.Welcome_Text}>
-
-					<div className={cn.Left_Space}></div>
-					<div className={cn.Right_Box}>
-						<div className={cn.Title_Text}>
-							<span>Welcome to</span>
-							<span>Bergin Prosthodontics</span>
-						</div>
-						<hr className={cn.Break}></hr>
-							<div className={cn.Paragraph}>
-							<p>lots of text here about the office lots of text here about the office</p>
-							</div>
-						
-					</div>
-
-				</div>
+                <div className={cn.Welcome_Text}>
+                    <div className={cn.Title_Text}>
+                        <span>Welcome to</span>
+                        <span>Bergin Prosthodontics</span>
+                    </div>
+                    <hr className={cn.Break}></hr>
+                    <div className={cn.Paragraph}>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Praesent at congue purus, quis sagittis mauris. Pellentesque 
+                            bibendum nisl quis gravida scelerisque. Nulla viverra, nunc et 
+                            tempor lacinia, lectus ligula lacinia magna, aliquet faucibus sapien 
+                            nulla nec orci. Maecenas viverra velit ac nulla ultricies, in consectetur 
+                            sapien suscipit. Morbi feugiat sapien nec tortor congue malesuada et ut eros. 
+                            Praesent ipsum risus, ornare quis pulvinar sed, scelerisque quis risus. Nulla 
+                            iaculis mi laoreet libero placerat pulvinar. 
+                        </p>
+                    </div>
+                </div>
 
 				<div className={cn.Bergin_Image}>
 					<img src={DrBergin}></img>
