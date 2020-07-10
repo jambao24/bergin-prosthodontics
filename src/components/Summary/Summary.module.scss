@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     min-height: 620px;
-    background-color: $quaternary-background-color;
+    background-color: $white-background-color;
 }
 
 .Welcome_Text {
@@ -15,7 +15,7 @@
 
 .Title_Text {
     font-size: $secondary-font-size;
-    color: $secondary-text;
+    color: $teriary-text;
     text-align: center;
     text-transform: uppercase;
     text-align: left;
@@ -35,13 +35,13 @@
 .Break {
     margin-top: 2px;
     margin-bottom: 10px;
-    color: $secondary-text;
+    color: $primary-text;
 }
 
 .Paragraph {
     font-size: $primary-font-size;
     font-family: OpenSans-Regular;
-    color: $secondary-text;
+    color: $primary-text;
 }
 
 .Bergin_Image {
@@ -67,10 +67,10 @@
 
 .Button {
     margin-top: 16px !important;
-    background-color: $quaternary-background-color;
+    background-color: $darkgray-background-color;
     color: $secondary-text;
     font-family: PlayfairDisplay-Bold4 !important; 
     font-size: 20px !important;
-    border: 1px solid #304774 !important;
+    border: 1px solid black !important;
     
 }

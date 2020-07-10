@@ -12,7 +12,6 @@ export default function App() {
       <Navigation></Navigation>
       <Title></Title>
       <Summary></Summary>
-      <BeforeAndAfter></BeforeAndAfter>
       <FeaturedServices></FeaturedServices>
       <ContactInfo></ContactInfo>
     </>
