@@ -2,12 +2,11 @@
 
 .Contact_Info {
     display: flex;
-    background-color: $primary-background-color;
+    background-color: $gray-background-color;
     justify-content: center;
     min-height: 300px;
     color: $primary-text;
     font-family: Raleway-Regular;
-    
 }
 
     .ContactInfo p {
@@ -43,7 +42,7 @@
     letter-spacing: 0.02857em;
     color: $primary-text;;
     text-transform: uppercase;
-    background-color: $primary-background-color;
+    background-color: $gray-background-color;
     text-align: center;
     font-family: Raleway-Regular;
 }

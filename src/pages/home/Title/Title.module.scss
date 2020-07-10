@@ -3,13 +3,13 @@
 
 .Title {
     display: flex;
-    background-image: url('../../assets/title/cepha.jpg');
+    background-image: url('../../../assets/home/title/cepha.jpg');
     background-repeat: no-repeat;
     background-color: white;
     background-position: center;
     font-size: $secondary-font-size;
     font-family: PlayfairDisplay-Bold;
     color: $secondary-text;
-    min-height: 700px; 
+    min-height: 650px; 
     justify-content: center;
 }
