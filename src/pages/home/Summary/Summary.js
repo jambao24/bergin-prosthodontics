@@ -1,6 +1,6 @@
 import React from 'react';
 import cn from './Summary.module.scss';
-import DrBergin from 'assets/summary/dr_bergin.jpg';
+import DrBergin from 'assets/home/summary/dr_bergin.jpg';
 import { Button } from "@material-ui/core";
 
 const Summary = () => {

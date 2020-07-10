@@ -1,7 +1,7 @@
 import React from 'react';
 import cn from './BeforeAndAfter.module.scss';
-import TeethBefore from 'assets/before_and_after/teeth-before.png';
-import TeethAfter from 'assets/before_and_after/teeth-after.png';
+import TeethBefore from 'assets/home/before_and_after/teeth-before.png';
+import TeethAfter from 'assets/home/before_and_after/teeth-after.png';
 
 const BeforeAndAfter = () => {
 	return (

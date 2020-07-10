@@ -4,7 +4,7 @@ import {
 	Switch,
 	Route,
 } from "react-router-dom";
-import FrontPage from "./components/FrontPage";
+import Home from "pages/home/Home";
 import Navigation from "./components/Navigation/Navigation";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
 				</Route>
 
 				<Route path="/">
-					<FrontPage></FrontPage>
+					<Home></Home>
 				</Route>
 			</Switch>
 
