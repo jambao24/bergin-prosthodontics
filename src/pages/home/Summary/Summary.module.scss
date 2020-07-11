@@ -3,7 +3,7 @@
 .Summary {
     display: flex;
     justify-content: center;
-    min-height: 620px;
+    min-height: 650px;
     background-color: $white-background-color;
 }
 
@@ -14,22 +14,22 @@
 }
 
 .Title_Text {
-    font-size: $secondary-font-size;
+    font-size: $mainheader-font-size;
     color: $teriary-text;
     text-align: center;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     text-align: left;
 }
 
     .Title_Text span:nth-child(1) {
-        font-family: PlayfairDisplay-Regular; 
+        font-family: DancingScript-Regular; 
         display: block;
         justify-content: center;
     }
 
     .Title_Text span:nth-child(2) {
         display: block;
-        font-family: PlayfairDisplay-Bold;
+        font-family: Raleway-Regular;
     }
 
 .Break {
@@ -39,7 +39,7 @@
 }
 
 .Paragraph {
-    font-size: $primary-font-size;
+    font-size: $paragraph-font-size;
     font-family: OpenSans-Regular;
     color: $primary-text;
 }
@@ -69,8 +69,8 @@
     margin-top: 16px !important;
     background-color: $darkgray-background-color;
     color: $secondary-text;
-    font-family: PlayfairDisplay-Bold4 !important; 
-    font-size: 20px !important;
+    font-family: Raleway-Bold !important; 
+    font-size: $primary-font-size;
     border: 1px solid black !important;
     
 }

@@ -6,11 +6,11 @@
 }
 
 .Toolbar {
-	min-height: 60px !important;
-	align-items: flex-start !important; 
-	padding-top: 8px;
-	display: flex; 
-	justify-content: flex-end; 
+    min-height: 60px !important;
+    align-items: flex-start !important; 
+    padding-top: 8px;
+    display: flex; 
+    justify-content: flex-end; 
 }
 
 .Phone_Icon {
@@ -24,14 +24,17 @@
     margin-right: 10px;
     margin-top: 7px;
     color: $primary-text;
+    font-size: $primary-font-size;
 }
 
 .Tab_Dropdown {
-	overflow: hidden !important;
+    overflow: hidden !important;
 }
 
 .Button {
     font-family: Raleway-Bold !important;
     background-color: $darkgray-background-color;
     color: $secondary-text;
+    font-size: 14px !important;
+    
 }

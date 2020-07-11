@@ -11,7 +11,7 @@ const Summary = () => {
                 <div className={cn.Welcome_Text}>
                     <div className={cn.Title_Text}>
                         <span>Welcome to</span>
-                        <span>Bergin Prosthodontics</span>
+                        <span>BERGIN PROSTHODONTICS</span>
                     </div>
                     <hr className={cn.Break}></hr>
                     <div className={cn.Paragraph}>

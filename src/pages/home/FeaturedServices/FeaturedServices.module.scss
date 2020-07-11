@@ -4,14 +4,13 @@
     display: flex;
     justify-content: center;
     background-color: $lightblue-background-color;
-    min-height: 450px;
+    min-height: 500px;
     align-items: center;
     flex-direction: column;
     
 }
 
 .Text {
-    font-size: 27px;
     color: $teriary-text;
     text-align: center;
 }
@@ -23,11 +22,14 @@
 }
 
 .Header {
-    font-family: PlayfairDisplay-Bold;
+    font-family: Raleway-Regular;
+    font-weight: bold !important;
+    font-size: $header-font-size;
 }
 
 .Caption {
-    font-family: PlayfairDisplay-Regular;
+    font-family: OpenSans-Regular;
+    font-size: $caption-font-size;
 }
 
 .Images{
