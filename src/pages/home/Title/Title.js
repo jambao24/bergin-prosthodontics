@@ -1,10 +1,8 @@
-import React from 'react';
-import cn from './Title.module.scss';
+import React from "react";
+import cn from "./Title.module.scss";
 
 const Title = () => {
-    return (
-        <div className={cn.Title}></div>
-    )
-}
+    return <div className={cn.Title}></div>;
+};
 
-export default Title 
+export default Title;
