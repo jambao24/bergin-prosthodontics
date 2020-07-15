@@ -6,16 +6,9 @@
     justify-content: center;
     min-height: 300px;
     color: $primary-text;
-    font-family: Raleway-Regular;
+    font-family: OpenSans-Regular;
+    font-size: $primary-font-size;
 }
-
-    .ContactInfo p {
-        line-height: 15px;
-        font-size: 14px;
-        letter-spacing: 0.02857em;
-        color: $primary-text;
-        text-transform: uppercase;
-    }
 
 .Column {
     display: flex;
@@ -49,5 +42,6 @@
 
 .Bold_Header {
     font-family: Raleway-Bold;
-    font-size: $teriary-font-size;
+    text-transform: uppercase;
+   
 }
