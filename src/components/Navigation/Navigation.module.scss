@@ -1,25 +1,46 @@
 @import 'global.scss';
 
 .AppBar {
-    background-color: $primary-background-color;
+    background-color: $gray-background-color;
+    box-shadow: none !important;
 }
 
 .Toolbar {
-    min-height: 50px !important;
+    min-height: 60px !important;
     align-items: flex-start !important; 
     padding-top: 8px;
     display: flex; 
-    justify-content: flex-end; 
+}
+
+.Name{
+    display: flex; 
+    font-family: DancingScript-Regular; 
+    font-size: $header-font-size;
+    margin-top: 8px;
+    color: black;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.Contact{
+    display: flex; 
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .Phone_Icon {
     margin-right: 5px;
-    margin-top: 8px;
+    color: $primary-text;
 }
 
 .Phone_Number {
+    font-family: Raleway-Bold !important;
     margin-right: 10px;
-    margin-top: 7px;
+    color: $primary-text;
+    font-size: $primary-font-size;
 }
 
 .Tab_Dropdown {
@@ -27,6 +48,9 @@
 }
 
 .Button {
-    background-color: $teriary-background-color;
-    color: $primary-text;
+    font-family: Raleway-Bold !important;
+    background-color: $darkgray-background-color;
+    color: $secondary-text;
+    font-size: 14px !important;
+    align-items: center;    
 }

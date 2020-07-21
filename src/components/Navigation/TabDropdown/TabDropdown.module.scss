@@ -5,10 +5,11 @@
 }
 
 .AppBar {
-    background-color: $primary-background-color;
+    background-color: $gray-background-color;
 }
 
 .Tab {
-    min-width: 73px !important;
+    font-family: Raleway-Bold !important;
+    font-size: $primary-font-size;
     color: $primary-text;
 }

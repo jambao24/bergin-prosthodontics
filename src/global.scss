@@ -1,15 +1,20 @@
 // Background colors
-$primary-background-color: #1A2440 !important; // #304774
-$secondary-background-color: #E4EAF1 !important;
-$teriary-background-color:  #73305B !important; //#B4B8C5
+$gray-background-color: #EEE !important; 
+$lightblue-background-color: #f2f5f7!important;
+$darkgray-background-color:  #3B4040!important; 
+$white-background-color: white !important;
 
 // Texts
-$primary-text: white !important;
-$secondary-text: #304774 !important;
+$primary-text: #3B4040 !important; //#3B4040 
+$secondary-text: white !important;
+$teriary-text: black !important; 
 
 // Font size
-$primary-font-size: 23px !important;
-$secondary-font-size: 27px !important;
+$mainheader-font-size: 44px !important;
+$header-font-size: 30px !important;
+$caption-font-size: 27px !important;
+$paragraph-font-size: 23px !important;
+$primary-font-size: 18px !important; 
 
 body {
     margin: 0;
@@ -31,16 +36,6 @@ body {
   }
   
   @font-face {
-    font-family: 'PlayfairDisplay-Bold';
-    src: local('PlayfairDisplay-Bold'), url(./assets/fonts/PlayfairDisplay-Bold.ttf) format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: local('PlayfairDisplay-Regular'), url(./assets/fonts/PlayfairDisplay-Regular.ttf) format('truetype');
-  }
-  
-  @font-face {
     font-family: 'Raleway-Bold';
     src: local('Raleway-Bold'), url(./assets/fonts/Raleway-Bold.ttf) format('truetype');
   }
@@ -49,4 +44,13 @@ body {
     font-family: 'Raleway-Regular';
     src: local('Raleway-Regular'), url(./assets/fonts/Raleway-Regular.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: 'DancingScript-Regular';
+    src: local('DancingScript'), url(./assets/fonts/DancingScript-Regular.ttf) format('truetype');
+  }
+
+  
+  
+  
   

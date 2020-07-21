@@ -1,17 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "pages/home/Home";
 import Navigation from "./components/Navigation/Navigation";
-import ContactInfo from "./components/ContactInfo/ContactInfo";
-import BeforeAndAfter from "./components/BeforeAndAfter/BeforeAndAfter";
-import FeaturedServices from "./components/FeaturedServices/FeaturedServices"
 
 export default function App() {
-  return (
-    <>
-      <Navigation></Navigation>
-      <div style={{minHeight: "700px"}}></div>
-      <BeforeAndAfter></BeforeAndAfter>
-      <FeaturedServices></FeaturedServices>
-      <ContactInfo></ContactInfo>
-    </>
-  )
+    return (
+        <Router>
+            <Navigation></Navigation>
+
+            <Switch>
+                <Route path="/contact">Contact Page</Route>
+
+                <Route path="/">
+                    <Home></Home>
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
