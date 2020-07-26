@@ -2,6 +2,7 @@ import React from "react";
 import cn from "./Summary.module.scss";
 import DrBergin from "assets/home/summary/dr_bergin.jpg";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const Summary = () => {
     return (
@@ -32,9 +33,11 @@ const Summary = () => {
 
                 <div className={cn.Bergin_Image}>
                     <img src={DrBergin}></img>
-                    <Button variant="contained" className={cn.Button}>
-                        Meet Dr. Bergin
-                    </Button>
+                    <Link to="/MeetDrBergin">
+                        <Button variant="contained" className={cn.Button}>
+                            Meet Dr. Bergin
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </>

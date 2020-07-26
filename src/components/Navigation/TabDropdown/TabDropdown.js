@@ -9,27 +9,22 @@ import {
     MenuList,
     MenuItem,
 } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
-const aboutUsItems = ["Our Practice", "Meet Dr. Bergin", "Meet Our Team"];
-const forPatientsItems = ["Patient Forms", "Financial Policy", "Insurance"];
-const servicesItems = [
-    "Cosmetic Dentistry",
-    "Restorative Denstistry",
-    "Implant Prosthodontics",
-    "Removable Prosthodontics",
+const aboutUsItems = [
+    { label: "Our Practice", route: "/" },
+    { label: "Meet Dr. Bergin", route: "/MeetDrBergin" },
+    { label: "Meet Our Team", route: "/" }
 ];
+const forPatientsItems = ["Patient Forms", "Financial Policy", "Insurance"];
+const servicesItems = ["Cosmetic Dentistry", "Restorative Denstistry", "Implant Prosthodontics", "Removable Prosthodontics"];
 const forDoctorsItems = ["Referring Dentists", "Publications"];
 
 const tabs = [
     { key: 0, pathName: "/test", label: "Home", items: [] },
     { key: 1, pathName: "/test", label: "About Us", items: aboutUsItems },
     { key: 2, pathName: "/test", label: "Services", items: servicesItems },
-    {
-        key: 3,
-        pathName: "/test",
-        label: "For Patients",
-        items: forPatientsItems,
-    },
+    { key: 3, pathName: "/test", label: "For Patients", items: forPatientsItems },
     { key: 4, pathName: "/test", label: "Gallery", items: [] },
     { key: 5, pathName: "/test", label: "For Doctors", items: forDoctorsItems },
 ];
@@ -95,12 +90,15 @@ class TabDropdown extends Component {
                         <Paper>
                             <MenuList>
                                 {tabs[tabIndex].items.map((item, index) => (
-                                    <MenuItem
-                                        key={index}
-                                        onClick={this.hideDropdown}
-                                    >
-                                        {item}
-                                    </MenuItem>
+
+                                    <Link to={item.route}>
+                                        <MenuItem
+                                            key={index}
+                                            onClick={this.hideDropdown}
+                                        >
+                                            {item.label}
+                                        </MenuItem>
+                                    </Link>
                                 ))}
                             </MenuList>
                         </Paper>
