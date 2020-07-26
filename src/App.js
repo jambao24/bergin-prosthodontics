@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "pages/home/Home";
 import Meetdrbergin from "pages/meetdrbergin/Meetdrbergin";
 import Navigation from "./components/Navigation/Navigation";
+import ContactInfo from "components/ContactInfo/ContactInfo";
 
 export default function App() {
     return (
@@ -17,6 +18,9 @@ export default function App() {
                     <Home></Home>
                 </Route>
             </Switch>
+
+            <ContactInfo></ContactInfo>
+
         </Router>
     );
 }

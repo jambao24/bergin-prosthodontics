@@ -3,7 +3,7 @@
 .Meet_Dr_Bergin {
     display: flex;
     justify-content: center;
-    min-height: 650px;
+    min-height: 736px;
     background-color: $white-background-color;
 }
 
@@ -57,4 +57,10 @@
     font-size: $paragraph-font-size;
     font-family: OpenSans-Regular;
     color: $primary-text;
+}
+
+.Logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
