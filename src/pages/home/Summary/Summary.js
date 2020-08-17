@@ -33,7 +33,7 @@ const Summary = () => {
 
                 <div className={cn.Bergin_Image}>
                     <img src={DrBergin}></img>
-                    <Link to="/MeetDrBergin">
+                    <Link to="/meetDrBergin">
                         <Button variant="contained" className={cn.Button}>
                             Meet Dr. Bergin
                         </Button>

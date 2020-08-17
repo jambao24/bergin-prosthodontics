@@ -14,19 +14,30 @@ import { Link } from "react-router-dom";
 const aboutUsItems = [
     { label: "Our Practice", route: "/" },
     { label: "Meet Dr. Bergin", route: "/MeetDrBergin" },
-    { label: "Meet Our Team", route: "/" }
+    { label: "Meet Our Team", route: "/" },
 ];
-const forPatientsItems = ["Patient Forms", "Financial Policy", "Insurance"];
-const servicesItems = ["Cosmetic Dentistry", "Restorative Denstistry", "Implant Prosthodontics", "Removable Prosthodontics"];
-const forDoctorsItems = ["Referring Dentists", "Publications"];
-
+const forPatientsItems = [
+    { label: "Patient Forms", route: "/" },
+    { label: "Financial Policy", route: "/" },
+    { label: "Insurance", route: "/" },
+];
+const servicesItems = [
+    { label: "Cosmetic Dentistry", route: "/" },
+    { label: "Restorative Dentistry", route: "/" },
+    { label: "Implant Prosthodontics", route: "/" },
+    { label: "Removable Prosthodontics", route: "/" },
+];
+const forDoctorsItems = [
+    { label: "Referring Dentists", route: "/" },
+    { label: "Publications", route: "/" },
+];
 const tabs = [
-    { key: 0, pathName: "/test", label: "Home", items: [] },
-    { key: 1, pathName: "/test", label: "About Us", items: aboutUsItems },
-    { key: 2, pathName: "/test", label: "Services", items: servicesItems },
-    { key: 3, pathName: "/test", label: "For Patients", items: forPatientsItems },
-    { key: 4, pathName: "/test", label: "Gallery", items: [] },
-    { key: 5, pathName: "/test", label: "For Doctors", items: forDoctorsItems },
+    { key: 0, label: "Home", items: [] },
+    { key: 1, label: "About Us", items: aboutUsItems },
+    { key: 2, label: "Services", items: servicesItems },
+    { key: 3, label: "For Patients", items: forPatientsItems },
+    { key: 4, label: "Gallery", items: [] },
+    { key: 5, label: "For Doctors", items: forDoctorsItems },
 ];
 
 class TabDropdown extends Component {
@@ -53,6 +64,37 @@ class TabDropdown extends Component {
         });
     };
 
+    // If Home or Gallery tab, display simple anchor. Otherwise, tab.
+    renderTabs = (tab) => {
+        if (tab.label == "Home") {
+            return (
+                <Link to="/">
+                    <Tab
+                        key={tab.key}
+                        onMouseEnter={this.showDropdown.bind(this, tab.key)}
+                        className={cn.Tab}
+                        label={tab.label}
+                        aria-owns={
+                            this.showDropdown ? "menu-list-grow" : undefined
+                        }
+                        aria-haspopup={"true"}
+                    />
+                </Link>
+            );
+        } else {
+            return (
+                <Tab
+                    key={tab.key}
+                    onMouseEnter={this.showDropdown.bind(this, tab.key)}
+                    className={cn.Tab}
+                    label={tab.label}
+                    aria-owns={this.showDropdown ? "menu-list-grow" : undefined}
+                    aria-haspopup={"true"}
+                />
+            );
+        }
+    };
+
     render() {
         const { targetTabElement, showDropdown, tabIndex } = this.state;
 
@@ -65,21 +107,7 @@ class TabDropdown extends Component {
                         textColor="primary"
                         centered
                     >
-                        {tabs.map((tab) => (
-                            <Tab
-                                key={tab.key}
-                                onMouseEnter={this.showDropdown.bind(
-                                    this,
-                                    tab.key
-                                )}
-                                className={cn.Tab}
-                                label={tab.label}
-                                aria-owns={
-                                    showDropdown ? "menu-list-grow" : undefined
-                                }
-                                aria-haspopup={"true"}
-                            />
-                        ))}
+                        {tabs.map((tab) => this.renderTabs(tab))}
                     </Tabs>
 
                     <Popper
@@ -90,7 +118,6 @@ class TabDropdown extends Component {
                         <Paper>
                             <MenuList>
                                 {tabs[tabIndex].items.map((item, index) => (
-
                                     <Link to={item.route}>
                                         <MenuItem
                                             key={index}
