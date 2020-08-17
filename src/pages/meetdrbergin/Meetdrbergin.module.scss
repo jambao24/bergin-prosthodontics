@@ -1,0 +1,66 @@
+@import "global.scss";
+
+.Meet_Dr_Bergin {
+    display: flex;
+    justify-content: center;
+    min-height: 736px;
+    background-color: $white-background-color;
+}
+
+.Bergin_Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+// Tablets, phones
+@media only screen and (min-width: 600px) {
+    .Bergin_Image img {
+        width: 300px;
+    }
+}
+
+// Monitors, laptops
+@media only screen and (min-width: 1200px) {
+    .Bergin_Image img {
+        width: 379px;
+    }
+}
+
+.Welcome_Text {
+    margin-top: 90px;
+    margin-right: 2%;
+    max-width: 600px;
+}
+
+.Title_Text {
+    font-size: $mainheader-font-size;
+    color: $teriary-text;
+    text-align: left;
+    justify-content: center;
+}
+
+.Title_Text span:nth-child(1) {
+    font-family: DancingScript-Regular;
+    display: block;
+    justify-content: center;
+}
+
+.Title_Text span:nth-child(2) {
+    display: block;
+    font-family: Raleway-Regular;
+}
+
+.Paragraph {
+    font-size: $paragraph-font-size;
+    font-family: OpenSans-Regular;
+    color: $primary-text;
+}
+
+.Logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
