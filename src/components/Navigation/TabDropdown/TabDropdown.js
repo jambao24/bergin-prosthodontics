@@ -64,7 +64,6 @@ class TabDropdown extends Component {
         });
     };
 
-    // If Home or Gallery tab, display simple anchor. Otherwise, tab.
     renderTabs = (tab) => {
         if (tab.label == "Home") {
             return (
