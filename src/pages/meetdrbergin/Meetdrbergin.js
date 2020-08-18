@@ -6,54 +6,42 @@ import SKCS from "assets/meetdrbergin/SKCS.png";
 import ADA from "assets/meetdrbergin/ADA.png";
 import WSDA from "assets/meetdrbergin/WSDA.png";
 import SeattleProstho from "assets/meetdrbergin/SeattleProsthodontics.png";
-import { withRouter } from "react-router-dom";
 
-class Meetdrbergin extends React.Component {
-    componentDidUpdate(prevProps) {
-        if (this.props.location !== prevProps.location) {
-            window.scrollTo(0, 0);
-        }
-    }
+export default function Meetdrbergin() {
+    return (
+        <div className={cn.Meet_Dr_Bergin}>
+            <div className={cn.Bergin_Image}>
+                <img src={DrBergin}></img>
+            </div>
 
-    render() {
-        return (
-            <div className={cn.Meet_Dr_Bergin}>
-                <div className={cn.Bergin_Image}>
-                    <img src={DrBergin}></img>
+            <div className={cn.Welcome_Text}>
+                <div className={cn.Title_Text}>
+                    <span>Meet</span>
+                    <span>Dr. Bergin</span>
                 </div>
-
-                <div className={cn.Welcome_Text}>
-                    <div className={cn.Title_Text}>
-                        <span>Meet</span>
-                        <span>Dr. Bergin</span>
-                    </div>
-                    <hr className={cn.Break}></hr>
-                    <div className={cn.Paragraph}>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Praesent at congue purus, quis sagittis
-                            mauris. Pellentesque bibendum nisl quis gravida
-                            scelerisque. Nulla viverra, nunc et tempor lacinia,
-                            lectus ligula lacinia magna, aliquet faucibus sapien
-                            nulla nec orci. Maecenas viverra velit ac nulla
-                            ultricies, in consectetur sapien suscipit. Morbi
-                            feugiat sapien nec tortor congue malesuada et ut
-                            eros. Praesent ipsum risus, ornare quis pulvinar
-                            sed, scelerisque quis risus. Nulla iaculis mi
-                            laoreet libero placerat pulvinar.
-                        </p>
-                        <div className={cn.Logos}>
-                            <img src={BoardofProstho}></img>
-                            <img src={SKCS}></img>
-                            <img src={ADA}></img>
-                            <img src={WSDA}></img>
-                            <img src={SeattleProstho}></img>
-                        </div>
+                <hr className={cn.Break}></hr>
+                <div className={cn.Paragraph}>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Praesent at congue purus, quis sagittis mauris.
+                        Pellentesque bibendum nisl quis gravida scelerisque.
+                        Nulla viverra, nunc et tempor lacinia, lectus ligula
+                        lacinia magna, aliquet faucibus sapien nulla nec orci.
+                        Maecenas viverra velit ac nulla ultricies, in
+                        consectetur sapien suscipit. Morbi feugiat sapien nec
+                        tortor congue malesuada et ut eros. Praesent ipsum
+                        risus, ornare quis pulvinar sed, scelerisque quis risus.
+                        Nulla iaculis mi laoreet libero placerat pulvinar.
+                    </p>
+                    <div className={cn.Logos}>
+                        <img src={BoardofProstho}></img>
+                        <img src={SKCS}></img>
+                        <img src={ADA}></img>
+                        <img src={WSDA}></img>
+                        <img src={SeattleProstho}></img>
                     </div>
                 </div>
             </div>
-        );
-    }
+        </div>
+    );
 }
-
-export default withRouter(Meetdrbergin);
