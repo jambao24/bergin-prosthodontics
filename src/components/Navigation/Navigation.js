@@ -4,6 +4,8 @@ import cn from "./Navigation.module.scss";
 import { AppBar, Toolbar, Button } from "@material-ui/core";
 import PhoneIcon from "@material-ui/icons/Phone";
 
+import { Link } from 'react-router-dom'
+
 const Navigation = () => {
     return (
         <AppBar position="static" className={cn.AppBar}>
@@ -13,7 +15,7 @@ const Navigation = () => {
                     <PhoneIcon className={cn.Phone_Icon} fontSize="small" />
                     <span className={cn.Phone_Number}>206-866-6466</span>
                     <Button variant="contained" className={cn.Button}>
-                        Contact Us
+                        <Link to={"/contact"}>{"Contact Us"}</Link>
                     </Button>
                 </div>
             </Toolbar>
