@@ -14,18 +14,18 @@
     display: flex;
     align-items: left;
     text-align: left;
-    max-width: 100%;
-    flex-basis: 50%;
 }
 
     .Column_Left {
-        justify-content: flex-end;
-        text-align: left;
+        justify-content: center;
+        max-width: 40%;
+        flex-basis: 40%;
     }
 
     .Column_Right {
         justify-content: flex-start;
-        text-align: left;
+        max-width: 60%;
+        flex-basis: 60%;
     }
 
 .Copyright {
