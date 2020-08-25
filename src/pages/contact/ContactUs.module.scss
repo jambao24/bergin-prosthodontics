@@ -1,6 +1,6 @@
 @import 'global.scss';
 
-.Contact_Info {
+.Contact_Us {
     display: flex;
     background-color: $gray-background-color;
     justify-content: center;
@@ -12,9 +12,9 @@
 
 .Column {
     display: flex;
-    align-items: center;
-    text-align: center;
-    max-width: 50%;
+    align-items: left;
+    text-align: left;
+    max-width: 100%;
     flex-basis: 50%;
 }
 
