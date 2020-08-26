@@ -2,7 +2,7 @@
 
 .Contact_Us {
     display: flex;
-    background-color: $gray-background-color;
+    background-color: $white-background-color;
     justify-content: center;
     min-height: 300px;
     color: $primary-text;
@@ -49,10 +49,9 @@
 }
 
 .Bold_Header {
-    font-family: Raleway-Bold;
-    text-transform: uppercase;
-   
+    font-family: Raleway-Bold; 
 }
+
 .FeaturedServices {
     display: flex;
     justify-content: center;

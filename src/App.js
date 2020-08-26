@@ -17,7 +17,6 @@ export default function App() {
                     <Switch>
                         <Route path="/contact" component={ContactUs} />
                         <Route path="/meetdrbergin" component={Meetdrbergin} />
-
                         <Route path="/">
                             <Home></Home>
                         </Route>
