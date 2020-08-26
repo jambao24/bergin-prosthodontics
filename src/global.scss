@@ -5,7 +5,7 @@ $darkgray-background-color: #3b4040 !important;
 $white-background-color: white !important;
 
 // Texts
-$primary-text: #3b4040 !important; //#3B4040
+$primary-text: #3b4040 !important;
 $secondary-text: white !important;
 $teriary-text: black !important;
 
@@ -16,8 +16,10 @@ $caption-font-size: 27px !important;
 $paragraph-font-size: 23px !important;
 $primary-font-size: 18px !important;
 
+// Links
 a {
     text-decoration: none !important;
+    color: $teriary-text;
 }
 
 body {
