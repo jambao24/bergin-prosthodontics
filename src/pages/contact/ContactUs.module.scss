@@ -7,25 +7,34 @@
     min-height: 300px;
     color: $primary-text;
     font-family: OpenSans-Regular;
-    font-size: $primary-font-size;
+    font-size: 16px;
 }
 
 .Column {
     display: flex;
     align-items: left;
     text-align: left;
+    line-height: 0.2;
 }
 
     .Column_Left {
         justify-content: center;
         max-width: 40%;
         flex-basis: 40%;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .Column_Right {
         justify-content: flex-start;
         max-width: 60%;
         flex-basis: 60%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .Left_Text_Bottom {
+        margin-bottom: 20px;
     }
 
 .Copyright {
@@ -51,6 +60,7 @@
 .Bold_Header {
     font-family: Raleway-Bold; 
 }
+
 
 .FeaturedServices {
     display: flex;
