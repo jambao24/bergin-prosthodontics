@@ -12,6 +12,7 @@ const ContactUs = () => {
                         <p className={cn.BigHeader}>Contact Us</p>
                         <p className={cn.BigText}>We'd love to hear from you!</p>
                         <br></br>
+                        <br></br>
                         <p className={cn.Bold_Header}>Email</p>
                         <p>info@berginprosthodontics.com </p>
                         <br></br>
