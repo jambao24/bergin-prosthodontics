@@ -10,20 +10,23 @@ const ContactUs = () => {
                 <div className={classNames(cn.Column, cn.Column_Left)}>
                     <div>
                         <p className={cn.BigHeader}>Contact Us</p>
-                        <p className={classNames(cn.BigText, cn.Left_Text_Bottom)}>We'd love to hear from you!</p>
-
+                        <p className={cn.BigText}>We'd love to hear from you!</p>
+                        <br></br>
                         <p className={cn.Bold_Header}>Email</p>
-                        <p className={cn.Left_Text_Bottom}>info@berginprosthodontics.com </p>
-
+                        <p>info@berginprosthodontics.com </p>
+                        <br></br>
+                        <br></br>
                         <p className={cn.Bold_Header}>Office Hours</p>
                         <p>Monday 8 AM - 5 PM</p>
                         <p>Tuesday 8 AM - 5 PM</p>
                         <p>Wednesday 8 AM - 5 PM</p>
-                        <p className={cn.Left_Text_Bottom}>Thursday 8 AM - 12 PM</p>
-
+                        <p>Thursday 8 AM - 12 PM</p>
+                        <br></br>
+                        <br></br>
                         <p className={cn.Bold_Header}>Phone Number</p>
-                        <p className={cn.Left_Text_Bottom}>206-866-6466</p>
-
+                        <p>206-866-6466</p>
+                        <br></br>
+                        <br></br>
                         <p className={cn.Bold_Header}>Fax</p>
                         <p>206-866-6465</p>
                     </div>
