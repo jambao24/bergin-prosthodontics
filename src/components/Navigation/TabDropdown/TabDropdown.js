@@ -14,12 +14,10 @@ import { Link } from "react-router-dom";
 const aboutUsItems = [
     { label: "Our Practice", route: "/" },
     { label: "Meet Dr. Bergin", route: "/MeetDrBergin" },
-    { label: "Meet Our Team", route: "/" },
 ];
 const forPatientsItems = [
     { label: "Patient Forms", route: "/" },
-    { label: "Financial Policy", route: "/" },
-    { label: "Insurance", route: "/" },
+    { label: "Patient Instructions", route: "/" },
 ];
 const servicesItems = [
     { label: "Cosmetic Dentistry", route: "/" },
@@ -33,7 +31,7 @@ const forDoctorsItems = [
 ];
 const tabs = [
     { key: 0, label: "Home", items: [] },
-    { key: 1, label: "About Us", items: aboutUsItems },
+    { key: 1, label: "Meet Dr. Bergin", items: [] },
     { key: 2, label: "Services", items: servicesItems },
     { key: 3, label: "For Patients", items: forPatientsItems },
     { key: 4, label: "Gallery", items: [] },
@@ -68,6 +66,21 @@ class TabDropdown extends Component {
         if (tab.label == "Home") {
             return (
                 <Link to="/">
+                    <Tab
+                        key={tab.key}
+                        onMouseEnter={this.showDropdown.bind(this, tab.key)}
+                        className={cn.Tab}
+                        label={tab.label}
+                        aria-owns={
+                            this.showDropdown ? "menu-list-grow" : undefined
+                        }
+                        aria-haspopup={"true"}
+                    />
+                </Link>
+            );
+        } else if (tab.label == "Meet Dr. Bergin") {
+            return (
+                <Link to="/MeetDrBergin">
                     <Tab
                         key={tab.key}
                         onMouseEnter={this.showDropdown.bind(this, tab.key)}
