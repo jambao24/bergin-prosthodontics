@@ -5,6 +5,7 @@ import Meetdrbergin from "pages/meetdrbergin/Meetdrbergin";
 import ContactUs from "pages/contact/ContactUs";
 import Navigation from "./components/Navigation/Navigation";
 import ContactInfo from "components/ContactInfo/ContactInfo";
+import CopyrightInfo from "components/CopyrightInfo/CopyrightInfo";
 import ScrollIntoView from "components/ScrollIntoView/ScrollIntoView";
 
 export default function App() {
@@ -21,7 +22,8 @@ export default function App() {
                     </Route>
                 </Switch>
 
-                <ContactInfo></ContactInfo>
+                <Route render={({ location }) => location.pathname !== "/contact" ? (<ContactInfo />) : null} />
+                <CopyrightInfo></CopyrightInfo>
             </ScrollIntoView>
         </Router>
     );

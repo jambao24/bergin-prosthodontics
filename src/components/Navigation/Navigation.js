@@ -13,9 +13,12 @@ const Navigation = () => {
                 <div className={cn.Contact}>
                     <PhoneIcon className={cn.Phone_Icon} fontSize="small" />
                     <span className={cn.Phone_Number}>206-866-6466</span>
-                    <Button variant="contained" className={cn.Button}>
-                        <Link to={"/contact"}>{"Contact Us"}</Link>
-                    </Button>
+
+                    <Link to={"/contact"}>
+                        <Button variant="contained" className={cn.Button}>
+                            Contact Us
+                        </Button>
+                    </Link>
                 </div>
             </Toolbar>
 
