@@ -1,34 +1,4 @@
-@import 'global.scss';
-
-.Copyright_Info {
-    display: flex;
-    background-color: $gray-background-color;
-    justify-content: center;
-    min-height: 300px;
-    color: $primary-text;
-    font-family: OpenSans-Regular;
-    font-size: $primary-font-size;
-}
-
-.Column {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    max-width: 33.3333%;
-    flex-basis: 33.3333%;
-}
-
-    .Column_Left {
-        justify-content: flex-end;
-    }
-
-    .Column_Middle {
-        justify-content: center;
-    }
-
-    .Column_Right {
-        justify-content: flex-start;
-    }
+@import "global.scss";
 
 .Copyright {
     font-size: 14px;
@@ -38,10 +8,4 @@
     background-color: $gray-background-color;
     text-align: center;
     font-family: Raleway-Regular;
-}
-
-.Bold_Header {
-    font-family: Raleway-Bold;
-    text-transform: uppercase;
-   
 }

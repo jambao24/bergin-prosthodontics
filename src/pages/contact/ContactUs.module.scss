@@ -1,4 +1,4 @@
-@import 'global.scss';
+@import "global.scss";
 
 .Contact_Us {
     display: flex;
@@ -17,80 +17,32 @@
     line-height: 0.2;
 }
 
-    .Column_Left {
-        justify-content: center;
-        max-width: 40%;
-        flex-basis: 40%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+.Column_Left {
+    justify-content: center;
+    max-width: 40%;
+    flex-basis: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    .Column_Right {
-        justify-content: flex-start;
-        max-width: 60%;
-        flex-basis: 60%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-
-.Copyright {
-    font-size: 14px;
-    letter-spacing: 0.02857em;
-    color: $primary-text;
-    text-transform: uppercase;
-    background-color: $gray-background-color;
-    text-align: center;
-    font-family: Raleway-Regular;
+.Column_Right {
+    justify-content: flex-start;
+    max-width: 60%;
+    flex-basis: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .BigHeader {
-    font-size: 42px;
+    font-size: $mainheader-font-size;
     font-family: Raleway-Regular;
 }
 
 .BigText {
-    font-size: 24px;
-    font-family: Raleway-Regular;  
+    font-size: $caption-font-size;
+    font-family: Raleway-Regular;
 }
 
 .Bold_Header {
-    font-family: Raleway-Bold; 
-}
-
-
-.FeaturedServices {
-    display: flex;
-    justify-content: center;
-    background-color: $lightblue-background-color;
-    min-height: 500px;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.Text {
-    color: $teriary-text;
-    text-align: center;
-}
-
-.Break{
-    margin-top: 2px;
-    margin-bottom: 2px;
-    color: $primary-text;
-}
-
-.Header {
-    font-family: Raleway-Regular;
-    font-weight: bold !important;
-    font-size: $header-font-size;
-}
-
-.Caption {
-    font-family: OpenSans-Regular;
-    font-size: $caption-font-size;
-}
-
-.Images{
-    margin-top: 23px
+    font-family: Raleway-Bold;
 }
