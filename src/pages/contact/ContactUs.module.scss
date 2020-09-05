@@ -20,7 +20,7 @@
 .Column_Left {
     justify-content: center;
     max-width: 40%;
-    flex-basis: 40%;
+    flex-basis: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -28,7 +28,7 @@
 .Column_Right {
     justify-content: flex-start;
     max-width: 60%;
-    flex-basis: 60%;
+    flex-basis: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -36,6 +36,7 @@
 .BigHeader {
     font-size: $mainheader-font-size;
     font-family: Raleway-Regular;
+    margin-top: 22px !important;
 }
 
 .BigText {
