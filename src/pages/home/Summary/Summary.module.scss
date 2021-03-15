@@ -1,0 +1,76 @@
+@import 'global.scss';
+
+.Summary {
+    display: flex;
+    justify-content: center;
+    min-height: 650px;
+    background-color: $white-background-color;
+}
+
+.Welcome_Text {
+    margin-top: 40px;
+    margin-right: 5%;
+    max-width: 600px;
+}
+
+.Title_Text {
+    font-size: $mainheader-font-size;
+    color: $teriary-text;
+    text-align: center;
+    //text-transform: uppercase;
+    text-align: left;
+}
+
+    .Title_Text span:nth-child(1) {
+        font-family: DancingScript-Regular; 
+        display: block;
+        justify-content: center;
+    }
+
+    .Title_Text span:nth-child(2) {
+        display: block;
+        font-family: Raleway-Regular;
+    }
+
+.Break {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: $primary-text;
+}
+
+.Paragraph {
+    font-size: $paragraph-font-size;
+    font-family: OpenSans-Regular;
+    color: $primary-text;
+}
+
+.Bergin_Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    // Tablets, phones
+    @media only screen and (min-width: 600px) {
+        .Bergin_Image img {
+            width: 300px;
+        }
+    }
+
+    // Monitors, laptops
+    @media only screen and (min-width: 1200px) {
+        .Bergin_Image img {
+            width: 379px;
+        }
+    }
+
+.Button {
+    margin-top: 16px !important;
+    background-color: $darkgray-background-color;
+    color: $secondary-text;
+    font-family: Raleway-Bold !important; 
+    font-size: $primary-font-size;
+    border: 1px solid black !important;
+    
+}
