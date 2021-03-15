@@ -1,0 +1,49 @@
+@import "global.scss";
+
+.Contact_Us {
+    display: flex;
+    background-color: $white-background-color;
+    justify-content: center;
+    min-height: 300px;
+    color: $primary-text;
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+}
+
+.Column {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    line-height: 0.2;
+}
+
+.Column_Left {
+    justify-content: center;
+    max-width: 40%;
+    flex-basis: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Column_Right {
+    justify-content: flex-start;
+    max-width: 60%;
+    flex-basis: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.BigHeader {
+    font-size: $mainheader-font-size;
+    font-family: Raleway-Regular;
+    margin-top: 22px !important;
+}
+
+.BigText {
+    font-size: $caption-font-size;
+    font-family: Raleway-Regular;
+}
+
+.Bold_Header {
+    font-family: Raleway-Bold;
+}

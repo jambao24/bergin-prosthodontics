@@ -1,0 +1,13 @@
+@import 'global.scss';
+
+
+.Title {
+    display: flex;
+    background-image: url('../../../assets/home/title/cepha.jpg');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    color: $secondary-text;
+    min-height: 650px; 
+    justify-content: center;
+}
